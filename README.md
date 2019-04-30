@@ -1,1 +1,1 @@
-# single-pgae
+# single-page
