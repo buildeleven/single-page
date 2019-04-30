@@ -1,0 +1,39 @@
+<body>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+  
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+  
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+  
+    <script>
+      // TODO: Replace the following with your app's Firebase project configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAm34ZZsGgZ1OocZxyNY2lMKL77_aTK2nU",
+        authDomain: "schiphol-signing.firebaseapp.com",
+        databaseURL: "https://schiphol-signing.firebaseio.com",
+        projectId: "schiphol-signing",
+        storageBucket: "schiphol-signing.appspot.com",
+        messagingSenderId: "53191475088"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+        // Get a reference to the database service
+      var database = firebase.database();
+
+      var field1 = database.ref('messages/kl101');
+      field1.on('value', function(snapshot) {
+        updateContent(snapshot.val());
+      });
+
+      
+      function updateContent(value){
+        document.getElementsByClassName("flow")[0].textContent = value;
+      }
+      
+    </script>
+    <div><h1 class="flow">waiting for data....</h1></div>
+    
+  <body>
