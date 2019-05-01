@@ -1,39 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAm34ZZsGgZ1OocZxyNY2lMKL77_aTK2nU",
+      authDomain: "schiphol-signing.firebaseapp.com",
+      databaseURL: "https://schiphol-signing.firebaseio.com",
+      projectId: "schiphol-signing",
+      storageBucket: "schiphol-signing.appspot.com",
+      messagingSenderId: "53191475088"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // Get a reference to the database service
+    var database = firebase.database();
+
+    var field1 = database.ref('messages/kl101');
+    field1.on('value', function (snapshot) {
+      updateContent(snapshot.val());
+    });
+
+
+    function updateContent(value) {
+      document.getElementsByClassName("flow")[0].textContent = value;
+    }
+
+  </script>
+  <title>Hello, world!</title>
+</head>
+
 <body>
-    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-  
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
-  
-    <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
-  
-    <script>
-      // TODO: Replace the following with your app's Firebase project configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyAm34ZZsGgZ1OocZxyNY2lMKL77_aTK2nU",
-        authDomain: "schiphol-signing.firebaseapp.com",
-        databaseURL: "https://schiphol-signing.firebaseio.com",
-        projectId: "schiphol-signing",
-        storageBucket: "schiphol-signing.appspot.com",
-        messagingSenderId: "53191475088"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-        // Get a reference to the database service
-      var database = firebase.database();
+  <div>
+    <h1 class="flow">waiting for data....</h1>
+  </div>
 
-      var field1 = database.ref('messages/kl101');
-      field1.on('value', function(snapshot) {
-        updateContent(snapshot.val());
-      });
+  <!-- Bootstrap the app -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
 
-      
-      function updateContent(value){
-        document.getElementsByClassName("flow")[0].textContent = value;
-      }
-      
-    </script>
-    <div><h1 class="flow">waiting for data....</h1></div>
-    
-  <body>
+</html>
