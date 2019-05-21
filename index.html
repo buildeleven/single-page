@@ -43,28 +43,39 @@
 <body>
 
   <div class="container-fluid">
-    <div class="row">
-      <div class="col offset-2 display-3 p-5">
-        Passengers arriving from:
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-2">
-          <img src="airplane.svg" class="float-right">
-      </div>
-      <div class="col-sm-8 display-1 text-uppercase links">
-        waiting for data....
-      </div>
-    </div>
-    <div class="w-100  p-5 "></div>
-    <div class="row">
-      <div class="col-sm-2">
-        <img src="baggage-belt.svg" class="float-right">
+    <div class="row passenger-flow">
+
+      <div class="col-10 mt-2">
+        <div class="row pt-4">
+            <div class="col offset-2 display-4 mt-5 pt-5">
+                Passengers arriving from:
+          </div>
+        </div>
+
+        <div class="row bp-5 mb-5 origin">
+          <div class="col-2 pt-3">
+              <img src="airplane.svg" class="float-right" >
+          </div>
+          <div class="col-8 display-1 text-uppercase links">
+              <span class="align-middle">Waiting for data....</span>
+          </div>
+        </div>
+
+        <div class="row mt-5 pt-5 route">
+          <div class="col-2 pt-3">
+            <img src="baggage-belt.svg" class="float-right">
+          </div>
+          <div class="col-8 display-2">
+              <span class="align-middle">Fast route </span><span style="color: white">|</span> <span class="align-middle">Exit</span>
+          </div>
+        </div>
       </div>
 
-      <div class="col-sm-8 display-2">
-          Fast route <span style="color: white">|</span> Exit
+
+      <div class="col-1 m-5 direction pr-3 ">
+        <img src="arrow.svg" class=" arrow pt-5">
       </div>
+
     </div>
   </div>
 

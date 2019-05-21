@@ -2,21 +2,36 @@
 
 body {
   background-color: #FFC629;
-  font-family: sans-serif;
+  font: 80% Arial, Helvetica, sans-serif;
 }
 
 img {
   border: 0 none;
   display: inline-block;
   height: auto;
-  max-width: 15rem;
+  max-width: 8rem;
   vertical-align: middle;
 }
 
 .display-1 {
-  font-size: 15rem !important;
+  font-size: 9rem !important;
 }
 
 .display-2 {
-  font-size: 12rem !important;
+  font-size: 7rem !important;
+}
+
+.origin {
+  height: 50%;
+}
+
+.direction {
+  height: 850px;
+  width: 150px;
+  background: #FFF;
+  border-radius: 75px/45px;
+}
+
+.arrow {
+
 }

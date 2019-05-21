@@ -1,0 +1,7 @@
+[Settings]
+
+[build]
+  publish = "./"
+
+[dev]
+  publish = "./"
