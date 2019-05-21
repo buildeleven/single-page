@@ -28,7 +28,7 @@
     // Get a reference to the database service
     var database = firebase.database();
 
-    var field1 = database.ref('messages/kl101');
+    var field1 = database.ref('messages/links');
     field1.on('value', function (snapshot) {
       updateContent(snapshot.val());
     });
