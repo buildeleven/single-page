@@ -21,17 +21,16 @@ img {
   font-size: 7rem !important;
 }
 
+.passenger-flow {
+  height: 100%;
+}
+
 .origin {
   height: 50%;
 }
 
 .direction {
-  height: 850px;
-  width: 150px;
+  height: 800px;
   background: #FFF;
   border-radius: 75px/45px;
-}
-
-.arrow {
-
 }
