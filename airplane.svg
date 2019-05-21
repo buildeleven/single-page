@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #2d2a26;
+      }
+
+      .cls-2, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        fill: #ffc629;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <title>airplane</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <polyline class="cls-2" points="19.5 17 19.5 21 19.5 48 28.5 48 28.5 21 28.5 16.9 33.3 22 48 36.8 48 24 24 0 0 24 0 36.8 19.5 17"/>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <g class="cls-3">
+      <rect class="cls-4" width="48" height="48"/>
+    </g>
+    <g class="cls-3">
+      <g class="cls-3">
+        <path class="cls-5" d="M.9,47.1H47.1V.9H.9ZM42,30.8,26.8,26.9s0,6-.5,10.5l5.5,3.4v3.9L24,42.4l-7.8,2.3V40.8l5.5-3.4c-.5-4.5-.5-10.5-.5-10.5L6,30.8V26.9l15.1-8.7V10c.2-2.8,1.1-7.4,2.8-7.4h.2c1.7,0,2.6,4.6,2.8,7.4v8.2L42,26.9Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

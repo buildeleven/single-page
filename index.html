@@ -9,11 +9,9 @@
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
   <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
 
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-  <link type="text/css" rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="custom.css">
   <script>
     var firebaseConfig = {
       apiKey: "AIzaSyAm34ZZsGgZ1OocZxyNY2lMKL77_aTK2nU",
@@ -39,12 +37,34 @@
     }
 
   </script>
-  <title>Hello, world!</title>
+  <title>Wayfinding</title>
 </head>
 
 <body>
-  <div>
-    <h1 class="flow">waiting for data....</h1>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col offset-2">
+        Passengers arriving from:
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+          <img src="airplane.svg" class="rounded float-left">
+      </div>
+      <div class="col-sm-8 flow">
+        waiting for data....
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <img src="baggage-belt.svg" class="rounded float-left">
+      </div>
+
+      <div class="col-sm-8">
+          Fast rout | Exit
+      </div>
+    </div>
   </div>
 
   <!-- Bootstrap the app -->
