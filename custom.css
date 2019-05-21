@@ -9,6 +9,14 @@ img {
   border: 0 none;
   display: inline-block;
   height: auto;
-  max-width: 100%;
+  max-width: 15rem;
   vertical-align: middle;
+}
+
+.display-1 {
+  font-size: 15rem !important;
+}
+
+.display-2 {
+  font-size: 12rem !important;
 }
