@@ -7,10 +7,14 @@ body {
 
 img {
   border: 0 none;
-  display: inline-block;
+  margin: auto;
   height: auto;
   max-width: 8rem;
-  vertical-align: middle;
+  vertical-align: middle; 
+}
+
+.arrow img  {
+  max-width: 100%;
 }
 
 .display-1 {
@@ -21,16 +25,12 @@ img {
   font-size: 7rem !important;
 }
 
-.passenger-flow {
-  height: 100%;
-}
-
 .origin {
-  height: 50%;
+  height: 55%;
 }
 
-.direction {
-  height: 800px;
+.arrow {
+  height: 900px;
   background: #FFF;
   border-radius: 400px/400px;
 }
